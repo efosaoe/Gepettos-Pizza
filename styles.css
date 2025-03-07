@@ -1,0 +1,641 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/*---------------Header---------------*/
+
+.nav {
+  height: 55px;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid black;
+  z-index: 1;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+/* .nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 20px;
+  color: #000000;
+  padding: 10px 10px 10px 10px;
+} */
+
+.nav-header {
+  font-size: 45px;
+  padding: 10px 10px 10px 10px;
+  font-family: "Dancing Script", cursive;
+}
+
+
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 25px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.Logo {
+  font-size: 35px;
+}
+
+
+
+/*--------------Main--------------*/
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-top: 75px;
+    text-align: center;
+}
+
+#orderbutton {
+    padding-top: 0px;
+}
+
+
+#pigpizza {
+    min-width: 100vw;
+}
+
+
+#bigpizza img {
+    height: 100%;
+    width: 100%;
+   
+    
+}
+
+/*#ordernowbutton {
+    border: 1px solid #cb3727;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #cb3727;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 85%;
+}*/
+
+.background {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.background img {
+  width: 100%;
+  height: auto;
+  opacity: 85%;
+}
+
+.background .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #cb3727;
+  color: white;
+  font-size: 32px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.background .button:hover {
+  background-color: #ad2516;
+}
+
+#ordernowbutton h2 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a :hover {
+    color: red;
+}
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+
+/*---------------Menu---------------*/
+main {
+  font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+  
+  .menu {
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  
+  .menu-group-heading {
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #cb3727;
+    color:#cb3727;
+  }
+  
+  .menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+  }
+  
+  .menu-item {
+    display: flex;
+  }
+
+  .menu-item:hover {
+    /*border: 3px solid rgb(0, 0, 0);*/
+    background-color: rgb(240, 240, 240);
+  }
+  
+  .menu-item-img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+  }
+  
+  .menu-item-text {
+    flex-grow: 1;
+  }
+  
+  .menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  .menu-item-name {
+    margin-right: 1.5em;
+  }
+  
+  .menu-item-desc {
+    line-height: 1.5;
+  }
+
+  .MenuPDF > a:link, .MenuPDF > a:visited {
+    align-items: center;
+    background-color: #cb3727;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 25px;
+    opacity: 85%;
+    color:white;
+    text-decoration: none;
+}
+
+
+
+/*---------------Footer---------------*/
+
+footer {
+    background-color: #cb3727;
+    padding: 20px;
+}
+
+.FooterTextRight {
+    text-align: end;
+    margin-right: 10px;
+    color: white;
+}
+
+/*---------------About US---------------*/
+
+
+/* .containerAboutusA {
+  grid-area: AboutA;
+  grid-row-start: 1;
+  grid-row-end: 3
+  grid-collumn-start: 1
+}
+
+.containerAboutusB {
+  grid-area: AboutB;
+  grid-row-start: 2;
+  grid-row-end: 3
+
+}
+.containerAboutusC {
+  grid-area: AboutC;
+  grid-row-start: 2;
+  grid-row-end: 3
+
+}
+.containerAboutusD {
+  grid-area: AboutD;
+
+} */
+
+
+.containerAboutus {
+  /* width: 80%;
+  margin-left: 10%;
+  margin-right: 10%; */
+  text-align: justify;
+  display: grid;
+  grid-template-areas: 
+  "a b"
+  "c c";
+  grid-gap: 2em;
+}
+
+.a {
+  display: grid;
+  grid-area: a;
+}
+.b {
+  display: grid;
+  grid-area: b;
+}
+.c {
+  display: grid;
+  grid-area: c;
+}
+
+
+
+
+
+/*---------------MobileStuff---------------*/
+@media screen and (min-width: 992px) {
+    .menu {
+      font-size: 16px;
+    }
+  
+    .menu-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .deliverymenu-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .menu-item-img {
+      width: 125px;
+      height: 125px;
+    }
+  }
+
+  @media (max-width:760px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #000000;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #ffffff;
+      opacity: 75%;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+
+    .containerAboutus {
+      grid-template-areas: 
+      "a"
+      "b"
+      "c";
+      grid-gap: none;
+    }
+  }
+
+/*----- Anthony Nguyen (I took Sean's code on main page and repurposed it to function as an order page on the delivery.html file. I was also in charge of checkout.html-----*/
+
+/* ---- delivery.html stuff ----*/
+
+.delivery {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+h3 {
+  text-align: center;
+  margin: 0px;
+}
+
+.deliverycontainer {
+  display: grid;
+  justify-content: center;
+  margin: 0px 30px;
+  gap: 3em;
+  grid-template-areas: 
+  'item-sizes delivery-menu-item'
+  'item-sizes delivery-menu-item'
+  'footer footer';
+}
+
+.item-sizes-heading {
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  text-align: left;
+  border-bottom: 2px solid #000000;
+  color:#000000;
+ /* margin-left: 0.5em; */
+}
+
+.item-sizes-heading2 {
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  text-align: left;
+  border-bottom: 2px solid #cb3727;
+  color:#cb3727;
+  /* margin-left: 0.5em; */
+}
+
+.delivery-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  /*gap: 1.5em;*/
+  padding: 1.5em 0; 
+  border-bottom: 1px solid black;
+  max-width: 200px;
+  margin-left: 0.5em; 
+}
+
+.delivery-group2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+  max-width: 900px;
+  margin-right: 0.5em; 
+}
+
+.delivery-item {
+  display: flex;
+  border: 1px solid black;
+}
+
+.delivery-item:hover {
+  /*border: 3px solid rgb(0, 0, 0);*/
+  background-color: rgb(240, 240, 240);
+}
+
+.delivery-item-img {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.delivery-item-text {
+  flex-grow: 1;
+}
+
+.delivery-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.delivery-item-name {
+  margin-right: 1.5em;
+}
+/*---- Delivery Mobile Stuff (Efosa) I copied and pasted mobile stuff here ----*/
+@media screen and (max-width: 992px) {
+  .delivery {
+   padding: 30px;
+  } 
+
+  /*.item-sizes-heading{
+    margin-left: 0.5em;
+  } */
+  .delivery-group {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 200px;
+    /* margin-left: 0.5em; */
+  }
+
+  .delivery-group2 {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 1000px;
+    /* margin-right: 0.5em; */
+  }
+
+  /* .delivery-item {
+    width: 125px;
+    height: 125px; 
+  }*/
+}
+
+/* ---- checkout.html stuff ----*/
+
+.checkoutpage-container {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 40px 0 60px 0;
+  justify-content: center;
+  align-items: start;
+  gap: 3em;
+}
+
+.contact {
+  max-width: 450px;
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.payment {
+  max-width: 450px;
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+legend {
+  font-size: 24px;
+}
+
+.row {
+  display: flex;
+  margin: 0 -16px;
+  /*justify-content: center;*/
+}
+
+.col-50 {
+  flex: 100%;
+}
+
+.col-75 {
+   
+  flex: 100%;
+}
+
+
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+select[name=state] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+select[name=month] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contactlabel {
+  padding: 0 16px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Efosa media Checkout */
+@media screen and (min-width: 760px) {
+.checkoutpage-container{
+  display: flex;
+  flex-wrap: nowrap;
+  /*max-width: 1000px;*/
+  flex: 100%;
+  flex-grow: 1;
+  margin-left: 175px;
+  margin-right: 175px;
+  justify-content: center;
+}
+}
